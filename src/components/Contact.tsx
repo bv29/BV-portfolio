@@ -81,28 +81,28 @@ export default function Contact() {
           <h2 className="text-3xl font-bold text-gray-900 mb-8">Get in Touch</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <p className="text-gray-600 mb-8">
+              <p className="text-amber-50	 mb-8">
                 I'm always interested in hearing about new projects and opportunities.
                 Feel free to reach out if you want to connect!
               </p>
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Mail className="w-5 h-5 text-blue-600 mr-3" />
-                  <span className="text-gray-600">Bhupeshverm29bv@gmail.com</span>
+                  <span className="text-amber-50	">Bhupeshverm29bv@gmail.com</span>
                 </div>
                 <div className="flex items-center">
                   <Phone className="w-5 h-5 text-blue-600 mr-3" />
-                  <span className="text-gray-600">+91 9479070589</span>
+                  <span className="text-amber-50	">+91 9479070589</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="w-5 h-5 text-blue-600 mr-3" />
-                  <span className="text-gray-600">India</span>
+                  <span className="text-amber-50	">India</span>
                 </div>
               </div>
             </div>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                <label htmlFor="name" className="block text-sm font-medium text-amber-50	 mb-1">
                   Name
                 </label>
                 <input
@@ -115,7 +115,7 @@ export default function Contact() {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                <label htmlFor="email" className="block text-sm font-medium text-amber-50	 mb-1">
                   Email
                 </label>
                 <input
@@ -128,7 +128,7 @@ export default function Contact() {
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                <label htmlFor="message" className="block text-sm font-medium text-amber-50	 mb-1">
                   Message
                 </label>
                 <textarea
