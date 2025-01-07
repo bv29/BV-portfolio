@@ -10,7 +10,7 @@ export default function Hero() {
             Hi, I'm Bhupesh
             <span className="block text-blue-600">Full Stack Developer</span>
           </h1>
-          <p className="text-xl text-gray-600 mb-8">
+          <p className="text-xl text-slate-400 mb-8">
             I build exceptional digital experiences that make life easier and more enjoyable. 
             Focused on creating clean, user-friendly solutions.
           </p>
