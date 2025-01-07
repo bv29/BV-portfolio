@@ -7,7 +7,7 @@ export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    message: ''
+    message: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submissionCount, setSubmissionCount] = useState(0);
@@ -43,7 +43,7 @@ export default function Contact() {
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
-          to_email: 'Bhupeshverm29bv@gmail.com'
+          to_email: 'Bhupeshverm29bv@gmail.com',
         },
         'rUme29clAq5gAMESV' // Replace with your EmailJS public key
       );
@@ -69,7 +69,7 @@ export default function Contact() {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData((prev) => ({
       ...prev,
-      [e.target.id]: e.target.value
+      [e.target.id]: e.target.value,
     }));
   };
 
@@ -78,31 +78,34 @@ export default function Contact() {
       <Toaster position="top-right" />
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Get in Touch</h2>
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">Get in Touch</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <p className="text-amber-50	 mb-8">
-                I'm always interested in hearing about new projects and opportunities.
-                Feel free to reach out if you want to connect!
+              <p className="text-gray-600 dark:text-gray-400 mb-8">
+                I'm always interested in hearing about new projects and opportunities. Feel free to
+                reach out if you want to connect!
               </p>
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Mail className="w-5 h-5 text-blue-600 mr-3" />
-                  <span className="text-amber-50	">Bhupeshverm29bv@gmail.com</span>
+                  <span className="text-gray-600 dark:text-gray-300">Bhupeshverm29bv@gmail.com</span>
                 </div>
                 <div className="flex items-center">
                   <Phone className="w-5 h-5 text-blue-600 mr-3" />
-                  <span className="text-amber-50	">+91 9479070589</span>
+                  <span className="text-gray-600 dark:text-gray-300">+91 9479070589</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="w-5 h-5 text-blue-600 mr-3" />
-                  <span className="text-amber-50	">India</span>
+                  <span className="text-gray-600 dark:text-gray-300">India</span>
                 </div>
               </div>
             </div>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-amber-50 mb-1">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-gray-900 dark:text-gray-300 mb-1"
+                >
                   Name
                 </label>
                 <input
@@ -111,11 +114,14 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 text-slate-100	 bg-slate-700	 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-2 text-gray-900 dark:text-gray-100 bg-gray-100 dark:bg-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-amber-50	 mb-1">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-gray-900 dark:text-gray-300 mb-1"
+                >
                   Email
                 </label>
                 <input
@@ -124,11 +130,14 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 text-slate-100	 bg-slate-700	 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-2 text-gray-900 dark:text-gray-100 bg-gray-100 dark:bg-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-amber-50	 mb-1">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-gray-900 dark:text-gray-300 mb-1"
+                >
                   Message
                 </label>
                 <textarea
@@ -137,7 +146,7 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   rows={4}
-                  className="w-full px-4 py-2 text-slate-100	 bg-slate-700	 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-2 text-gray-900 dark:text-gray-100 bg-gray-100 dark:bg-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 ></textarea>
               </div>
               <button

@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="pt-32 pb-16 md:pt-40 md:pb-24">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
             Hi, I'm Bhupesh
             <span className="block text-blue-600">Full Stack Developer</span>
           </h1>
@@ -24,7 +24,7 @@ export default function Hero() {
             </a>
             <a 
               href="#contact" 
-              className="inline-flex items-center justify-center px-6 py-3 border-2 border-gray-900 text-gray-900 rounded-lg hover:bg-gray-900 hover:text-white transition-colors"
+              className="inline-flex items-center justify-center px-6 py-3 border-2 border-gray-900 text-gray-900 dark:border-white dark:text-white rounded-lg hover:bg-gray-900 hover:text-white dark:hover:bg-white dark:hover:text-gray-900 transition-colors"
             >
               Get in Touch
             </a>
