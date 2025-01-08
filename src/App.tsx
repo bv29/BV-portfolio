@@ -14,7 +14,8 @@ function App() {
       <Header isDark={isDark} toggleDark={() => toggleDark(!isDark)} />
       <main>
         <Hero />
-        <Projects />
+        <p className='text-white text-center '>"projects are under construction  ⬇️" </p>
+        <Projects/>
         <Contact />
       </main>
       <footer className="bg-gray-900 dark:bg-gray-950 text-white py-8">
