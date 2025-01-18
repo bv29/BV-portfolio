@@ -24,7 +24,7 @@ export default function Header({ isDark, toggleDark }: HeaderProps) {
             <a href="#projects" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Projects</a>
             <a href="#contact" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contact</a>
             <div className="flex items-center space-x-4">
-              <a href="https://github.com/bv29" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <a href="https://github.com/bhupeshv29" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 <Github className="w-5 h-5" />
               </a>
               <a href="https://www.linkedin.com/in/bhupesh-verma-684991198" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
