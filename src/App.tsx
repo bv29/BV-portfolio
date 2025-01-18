@@ -22,7 +22,7 @@ function App() {
       <div className="justify-center flex p-4">
   <p className="flex space-x-4">
     <a
-      href="https://github.com/bv29"
+      href="https://github.com/bhupeshv29"
       className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
     >
       <Github className="w-5 h-5" />
